@@ -16,6 +16,8 @@ end
 
 target 'AVCHDConverter' do
   config = use_native_modules!
+  pod 'shaquillehinds-ffmpeg-kit-ios', :podspec => 'https://raw.githubusercontent.com/shaquillehinds/ffmpeg/master/shaquillehinds-ffmpeg-kit-ios.podspec'
+  pod 'ffmpeg-kit-react-native', :path => '../node_modules/ffmpeg-kit-react-native'
 
   use_react_native!(
     :path => config[:reactNativePath],
