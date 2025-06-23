@@ -2,6 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import FilePickerScreen from '@screens/file_picker_screen';
+import VideoDetailsScreen from '@screens/video_details_screen';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,10 @@ const App = () => {
           name="Directory picker"
           component={FilePickerScreen}
           options={{ title: 'Pick Directory' }}
+        />
+        <Stack.Screen
+          name="Video details"
+          component={VideoDetailsScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
